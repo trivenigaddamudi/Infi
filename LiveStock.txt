@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livestock Management Dashboard</title>
+  <link rel="stylesheet" href="Infilink.css">
+</head>
+<body>
+  <header>
+    <h1>Livestock Management Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="add-livestock">
+      <h2>Add New Livestock</h2>
+      <form id="livestock-form">
+        <input type="text" id="animal-id" placeholder="Animal ID" required>
+        <input type="text" id="animal-type" placeholder="Animal Type" required>
+        <input type="number" id="age" placeholder="Age (years)" required>
+        <input type="number" id="weight" placeholder="Weight (kg)" required>
+        <button type="submit">Add Livestock</button>
+      </form>
+    </section>
+
+    <section class="livestock-list">
+      <h2>Livestock Records</h2>
+      <table id="livestock-table">
+        <thead>
+          <tr>
+            <th>Animal ID</th>
+            <th>Type</th>
+            <th>Age</th>
+            <th>Weight</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Livestock entries will appear here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
